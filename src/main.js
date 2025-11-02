@@ -24,6 +24,7 @@ function updateGreeting() {
 function resetCount() {
   clickCount = 0;
   countElement.textContent = "Button clicks: 0";
+  greetingElement.style.color = "";
 }
 
 // Event listener - this is new! Responds to user interaction
