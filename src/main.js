@@ -10,6 +10,7 @@ const resetButton = document.getElementById("Reset");
 const incrementButton = document.getElementById("Increment");
 const decrementButton = document.getElementById("Decrement");
 
+// Increment Button
 function incrementCount() {
   clickCount++;
   countElement.textContent = `Button clicks: ${clickCount}`;
@@ -20,6 +21,7 @@ function incrementCount() {
   }
 }
 
+// Decrement Button
 function decrementCount() {
   clickCount--;
   countElement.textContent = `Button clicks: ${clickCount}`;
