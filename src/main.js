@@ -13,17 +13,28 @@ const decrementButton = document.getElementById("Decrement");
 function incrementCount() {
   clickCount++;
   countElement.textContent = `Button clicks: ${clickCount}`;
+  if (clickCount >= 10) {
+    document.body.style.backgroundColor = "lightgreen";
+  } else {
+    document.body.style.backgroundColor = ""; // reset if below 10
+  }
 }
 
 function decrementCount() {
   clickCount--;
   countElement.textContent = `Button clicks: ${clickCount}`;
+  if (clickCount >= 10) {
+    document.body.style.backgroundColor = "lightgreen";
+  } else {
+    document.body.style.backgroundColor = ""; // reset if below 10
+  }
 }
 
 // Reset function
 function resetCount() {
   clickCount = 0;
   countElement.textContent = "Button clicks: 0";
+  document.body.style.backgroundColor = "";
 }
 
 // Event listener - this is new! Responds to user interaction
